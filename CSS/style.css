@@ -141,12 +141,9 @@ body.fashion-page {
 .fashion-page .photo {
     position: relative;
     width: 100%;
-    height: 230px;
+    height: 100px;
     margin: 0;
-    padding: 5px;
-
     border: 2px solid #111111;
-    background-color: #eeeeee;
 }
 
 .fashion-page .photo img {
@@ -157,19 +154,19 @@ body.fashion-page {
 }
 
 .fashion-page .photo-one {
-    height: 250px;
+    height: 400px;
 }
 
 .fashion-page .photo-two {
-    height: 230px;
+    height: 400px;
 }
 
 .fashion-page .photo-three {
-    height: 220px;
+    height: 500px;
 }
 
 .fashion-page .photo-four {
-    height: 220px;
+    height: 400px;
 }
 
 
