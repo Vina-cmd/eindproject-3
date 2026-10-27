@@ -1,0 +1,846 @@
+
+/* ========================================
+   1. BASISINSTELLINGEN
+======================================== */
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body.fashion-page {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("/images/achtergrondcover1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.fashion-page *,
+.fashion-page *::before,
+.fashion-page *::after {
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   2. MAGAZINE
+======================================== */
+
+.fashion-page .magazine {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+
+    background-image: url("/images/achtergrondcover1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+
+/* ========================================
+   3. HEADER
+======================================== */
+
+.fashion-page .masthead {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.fashion-page .masthead h1 {
+    margin: 12px 1.5%;
+    color: #ff431b;
+    font-family: Impact, "Arial Narrow", sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+
+    -webkit-text-stroke: 1.5px black;
+    text-shadow: 3px 3px 0 black;
+}
+
+.fashion-page .masthead p {
+    margin: 8px 0;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* ========================================
+   4. GROENE BALKEN
+======================================== */
+
+.fashion-page .green-bar {
+    position: relative;
+    width: 100%;
+    margin: 12px 0;
+    padding: 10px;
+
+    border: 2px solid #171717;
+    border-radius: 12px;
+    background-color: #35c88b;
+
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* ========================================
+   5. MAGAZINESECTIES
+======================================== */
+
+.fashion-page .intro,
+.fashion-page .feature,
+.fashion-page .culture,
+.fashion-page .bape,
+.fashion-page .final-section {
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 24px;
+
+    margin: 0 0 28px;
+    padding: 15px 0;
+}
+
+.fashion-page .intro > *,
+.fashion-page .feature > *,
+.fashion-page .culture > *,
+.fashion-page .bape > *,
+.fashion-page .final-section > * {
+    min-width: 0;
+}
+
+
+/* ========================================
+   6. FOTO'S
+======================================== */
+
+.fashion-page .photo {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    margin: 0;
+    padding: 5px;
+
+    border: 2px solid #111111;
+    background-color: #eeeeee;
+}
+
+.fashion-page .photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fashion-page .photo-one {
+    height: 250px;
+}
+
+.fashion-page .photo-two {
+    height: 230px;
+}
+
+.fashion-page .photo-three {
+    height: 220px;
+}
+
+.fashion-page .photo-four {
+    height: 220px;
+}
+
+
+/* ========================================
+   7. JAPANSE TEKENS
+======================================== */
+
+.fashion-page .japanese-title {
+    position: absolute;
+    top: 10px;
+    left: 36%;
+    z-index: 2;
+
+    margin: 0;
+    color: #ff9d00;
+    font-family: serif;
+    font-size: 70px;
+    font-weight: normal;
+    line-height: 1.05;
+    writing-mode: vertical-rl;
+    text-shadow: 2px 2px white;
+    pointer-events: none;
+}
+
+.fashion-page .vertical-title {
+    position: absolute;
+    top: 15px;
+    left: 40%;
+    z-index: 2;
+
+    margin: 0;
+    color: #ff4b00;
+    font-size: 70px;
+    writing-mode: vertical-rl;
+    pointer-events: none;
+}
+
+
+/* ========================================
+   8. ROZE TEKSTBALLONNEN
+======================================== */
+
+.fashion-page .pink-text {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+
+    border: 4px dotted #111111;
+    border-radius: 25px;
+    background-color: #f5a5dc;
+
+    color: #30202a;
+    font-size: 14px;
+    overflow-wrap: break-word;
+}
+
+.fashion-page .pink-text h2 {
+    margin: 0 0 12px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.fashion-page .pink-text p {
+    margin: 0 0 10px;
+    line-height: 1.6;
+}
+
+.fashion-page .pink-text p:last-child {
+    margin-bottom: 0;
+}
+
+.fashion-page .text-one,
+.fashion-page .text-two,
+.fashion-page .text-three,
+.fashion-page .text-four,
+.fashion-page .text-five {
+    min-height: 0;
+    top: auto;
+    right: auto;
+}
+
+
+/* ========================================
+   9. QUOTE
+======================================== */
+
+.fashion-page .quote {
+    position: relative;
+    width: 100%;
+    margin: 15px 0;
+    padding: 20px;
+
+    border: 5px solid #36d9a0;
+    background-color: #ff55d2;
+    text-align: center;
+}
+
+.fashion-page .quote h2 {
+    margin: 0;
+    color: #ff572b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    line-height: 1.25;
+    overflow-wrap: break-word;
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   10. HANDGESCHREVEN TEKST
+======================================== */
+
+.fashion-page .handwritten {
+    position: relative;
+    margin: 10px 0;
+    color: #ff665e;
+    font-family: cursive;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 1.2;
+
+    -webkit-text-stroke: 0.4px white;
+    text-shadow: 1px 1px black;
+}
+
+
+/* ========================================
+   11. AAP-AFBEELDING
+======================================== */
+
+.fashion-page .monkey {
+    position: relative;
+    width: 180px;
+    max-width: 100%;
+    margin: 15px 0;
+}
+
+.fashion-page .monkey img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* ========================================
+   12. FOOTER
+======================================== */
+
+.fashion-page .footer {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+
+    background-color: #111111;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+/* ========================================
+   VINA — JAPANESE Y2K MAGAZINE COVER
+   Formaat: 1200 x 1788 pixels
+======================================== */
+
+
+/* ========================================
+   1. BASISINSTELLINGEN
+======================================== */
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body.vina-cover {
+    margin: 0;
+    padding: 0;
+
+    min-height: 100vh;
+
+    background-color: #142a35;
+
+    font-family: Impact, "Arial Black", sans-serif;
+}
+
+
+/* ========================================
+   2. MAGAZINE COVER
+======================================== */
+
+.vina-cover .poster {
+    position: relative;
+
+    width: 1200px;
+    height: 1788px;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    background-image: url("/images/coverachtergrond.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+
+/* ========================================
+   3. MASTHEAD — VINA
+======================================== */
+
+.vina-cover .poster h1 {
+    position: absolute;
+    top: 25px;
+    left: 2%;
+    z-index: 15;
+
+    margin: 0;
+
+    color: #ff4800;
+
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: 110px;
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -4px;
+
+    text-transform: uppercase;
+
+    -webkit-text-stroke: 3px #000000;
+
+    text-shadow:
+        8px 8px 0 #000000;
+}
+
+
+/* ========================================
+   4. BOVENSTE SUBTITEL
+======================================== */
+
+.vina-cover .cover-subtitle {
+    position: absolute;
+    top: 150px;
+    left: 2%;
+    z-index: 15;
+
+    margin: 0;
+
+    color: #ff9d42;
+
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    line-height: 1.2;
+
+    text-transform: uppercase;
+
+    text-shadow:
+        2px 2px 0 #000000,
+        -1px -1px 0 #000000;
+}
+
+
+/* ========================================
+   5. TEKST RECHTSBOVEN
+======================================== */
+
+.vina-cover .cover-mark {
+    position: absolute;
+    top: 30px;
+    right: 2%;
+    z-index: 15;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+
+    max-width: 35%;
+
+    margin: 0;
+    padding: 0;
+
+    background: transparent;
+    color: #d15eff;
+
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: 1px;
+
+    text-align: right;
+    text-transform: uppercase;
+
+    text-shadow:
+        3px 3px 0 #000000,
+        -1px -1px 0 #000000;
+}
+
+
+/* ========================================
+   6. EXTRA MAGAZINE TEKSTEN
+======================================== */
+
+.vina-cover .cover-details span {
+    position: absolute;
+    z-index: 5;
+
+    display: block;
+    width: max-content;
+    max-width: 420px;
+
+    box-sizing: border-box;
+
+    padding: 7px 10px;
+
+    border: 2px solid #000000;
+
+    background-color: #ff9d42;
+    color: #000000;
+
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    box-shadow:
+        4px 4px 0 #000000;
+}
+
+
+/* LABEL 1 */
+
+.vina-cover .detail-one {
+    top: 205px;
+    left: 175px;
+
+    transform: rotate(-4deg);
+}
+
+
+/* LABEL 2 */
+
+.vina-cover .detail-two {
+    top: 470px;
+    right: 110px;
+
+    background-color: #4df3a3;
+
+    transform: rotate(3deg);
+}
+
+
+/* LABEL 3 */
+
+.vina-cover .detail-three {
+    top: 760px;
+    left: 175px;
+
+    background-color: #d15eff;
+
+    transform: rotate(-3deg);
+}
+
+
+/* LABEL 4 */
+
+.vina-cover .detail-four {
+    top: 1030px;
+    right: 100px;
+
+    background-color: #ff481f;
+
+    transform: rotate(-4deg);
+}
+
+
+/* LABEL 5 */
+
+.vina-cover .detail-five {
+    top: 1230px;
+    left: 190px;
+
+    background-color: #ff481f;
+
+    transform: rotate(2deg);
+}
+
+
+/* LABEL 6 */
+
+.vina-cover .detail-six {
+    top: 1450px;
+    right: 100px;
+
+    background-color: #4df3a3;
+
+    transform: rotate(-2deg);
+}
+
+
+/* LABEL 7 */
+
+.vina-cover .detail-seven {
+    top: 350px;
+    left: 190px;
+
+    background-color: #ff481f;
+
+    transform: rotate(3deg);
+}
+
+
+/* LABEL 8 */
+
+.vina-cover .detail-eight {
+    top: 600px;
+    right: 130px;
+
+    background-color: #d15eff;
+
+    transform: rotate(-3deg);
+}
+
+
+/* LABEL 9 */
+
+.vina-cover .detail-nine {
+    top: 900px;
+    left: 185px;
+
+    background-color: #4df3a3;
+
+    transform: rotate(2deg);
+}
+
+
+/* LABEL 10 */
+
+.vina-cover .detail-ten {
+    top: 1370px;
+    right: 110px;
+
+    background-color: #ff9d42;
+
+    transform: rotate(3deg);
+}
+
+
+/* ========================================
+   7. LINKER VERTICALE TEKST
+======================================== */
+
+.vina-cover .left-banner {
+    position: absolute;
+    top: 230px;
+    left: 15px;
+    z-index: 10;
+
+    pointer-events: none;
+}
+
+.vina-cover .left-banner h2 {
+    margin: 0;
+
+    color: #ff4800;
+
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: 95px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 4px;
+
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+
+    -webkit-text-stroke: 2px #000000;
+
+    text-shadow:
+        6px 6px 0 #000000;
+}
+
+
+/* ========================================
+   8. RECHTER VERTICALE TEKST
+======================================== */
+
+.vina-cover .right-banner {
+    position: absolute;
+    top: 230px;
+    right: 15px;
+    z-index: 10;
+
+    pointer-events: none;
+}
+
+.vina-cover .right-banner h2 {
+    margin: 0;
+
+    color: #4df3a3;
+
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: 2px;
+
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+
+    -webkit-text-stroke: 1px #000000;
+
+    text-shadow:
+        4px 4px 0 #000000;
+}
+
+
+/* ========================================
+   9. NAVIGATIE
+======================================== */
+
+.vina-cover .cover-nav {
+    position: absolute;
+    bottom: 35px;
+    left: 25px;
+    z-index: 20;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+
+/* ALGEMENE KNOPSTIJL */
+
+.vina-cover .cover-nav a {
+    display: inline-block;
+
+    box-sizing: border-box;
+    max-width: 1100px;
+
+    padding: 12px 22px;
+
+    border: 5px solid #000000;
+
+    background-color: #ff481f;
+    color: #000000;
+
+    box-shadow:
+        8px 8px 0 #000000;
+
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.1;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+
+/* EERSTE KNOP */
+
+.vina-cover .cover-nav a:nth-child(1) {
+    letter-spacing: 1px;
+}
+
+
+/* TWEEDE KNOP */
+
+.vina-cover .cover-nav a:nth-child(2) {
+    font-family: Arial, sans-serif;
+    font-weight: 900;
+}
+
+
+/* DERDE KNOP */
+
+.vina-cover .cover-nav a:nth-child(3) {
+    font-family: Georgia, serif;
+    font-weight: 900;
+}
+
+
+/* HOVER-EFFECT */
+
+.vina-cover .cover-nav a:hover {
+    transform: translate(-3px, -3px);
+
+    box-shadow:
+        11px 11px 0 #000000;
+
+    background-color: #ff6642;
+}
+
+
+/* KLIK-EFFECT */
+
+.vina-cover .cover-nav a:active {
+    transform: translate(2px, 2px);
+
+    box-shadow:
+        3px 3px 0 #000000;
+}
+
+
+/* ========================================
+   10. KLEINE EDITORIAL DETAILS
+======================================== */
+
+.vina-cover .cover-footer span {
+    position: absolute;
+    z-index: 8;
+
+    display: block;
+
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    text-shadow:
+        2px 2px 0 #000000,
+        -1px -1px 0 #000000;
+}
+
+
+/* LINKSONDER */
+
+.vina-cover .footer-left {
+    bottom: 15px;
+    right: 25px;
+}
+
+
+/* RECHTSONDER */
+
+.vina-cover .footer-right {
+    top: 1750px;
+    right: 25px;
+}
+
+
+/* EXTRA SLOGAN */
+
+.vina-cover .footer-bottom {
+    top: 1650px;
+    left: 190px;
+}
+
+
+
+
