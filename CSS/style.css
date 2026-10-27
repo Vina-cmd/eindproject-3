@@ -377,7 +377,7 @@ body.vina-cover {
 
     box-sizing: border-box;
 
-    background-image: url("/images/coverachtergrond.jpg");
+    background-image: url("../images/achtergrondcover.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
