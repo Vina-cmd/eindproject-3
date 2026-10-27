@@ -44,7 +44,7 @@ body.fashion-page {
     margin: 0;
     padding: 20px;
 
-    background-image: url("/images/achtergrondcover1.jpg");
+    background-image: url("../images/achtergrondcover.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
