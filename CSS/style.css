@@ -863,7 +863,6 @@ body.informatie-page {
     width: 100%;
     min-height: 100vh;
 
-    background-color: #171717;
     background-image: url("../images/infoachtergrond.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -884,7 +883,7 @@ body.informatie-page {
 }
 
 .informatie-page .head h1 {
-    margin: 0;
+    margin: 10;
 
     color: #ff2a00;
     font-family: Impact, "Arial Black", sans-serif;
@@ -901,7 +900,7 @@ body.informatie-page {
 }
 
 .informatie-page .tussentekst {
-    margin: 25px 0 5px 20px;
+    margin: -235px 0 5px 20px;
 
     color: #26e67b;
     font-size: 40px;
@@ -917,7 +916,7 @@ body.informatie-page {
 .informatie-page .ondertitel {
     display: inline-block;
 
-    margin: 25px 0 0 200px;
+    margin: 75px 0 0 200px;
 
     color: #ff78f6;
     font-size: 20px;
@@ -949,7 +948,6 @@ body.informatie-page {
     background-color: #f5f0e8;
     color: #171717;
 
-    border: 4px solid #ed80ad;
 }
 
 
@@ -1026,11 +1024,11 @@ body.informatie-page {
     float: left;
 
     width: 110px;
-    margin: 20px 25px 20px 0;
+    margin: 700px 50px 20px 20px;
 
     color: #ff3300;
     font-family: "Comic Sans MS", cursive, sans-serif;
-    font-size: 35px;
+    font-size: 50px;
     font-weight: 900;
     line-height: 1.05;
     text-align: center;
@@ -1103,72 +1101,3 @@ body.informatie-page {
 }
 
 
-/* ========================================
-   12. MOBIELE WEERGAVE
-======================================== */
-
-@media (max-width: 700px) {
-
-    .informatie-page .head {
-        padding: 25px 15px;
-    }
-
-    .informatie-page .head h1 {
-        font-size: 55px;
-    }
-
-    .informatie-page .tussentekst {
-        margin: 25px 0 10px;
-        font-size: 23px;
-    }
-
-    .informatie-page .ondertitel {
-        margin: 20px 0 0 20px;
-        font-size: 14px;
-        letter-spacing: 2px;
-    }
-
-    .informatie-page .page {
-        padding: 15px 3%;
-    }
-
-    .informatie-page .new-text-box {
-        width: 100%;
-        margin: 25px auto;
-        padding: 20px;
-    }
-
-    .informatie-page .new-text-box h1 {
-        font-size: 43px;
-    }
-
-    .informatie-page .new-text-box h2 {
-        font-size: 22px;
-    }
-
-    .informatie-page .new-text-box p {
-        font-size: 15px;
-        line-height: 1.7;
-    }
-
-    .informatie-page .green-oval-badge {
-        width: 180px;
-        height: 130px;
-        margin: 15px 5px 15px 15px;
-    }
-
-    .informatie-page .green-oval-badge h2 {
-        font-size: 22px;
-        padding: 10px;
-    }
-
-    .informatie-page .red-handwriting {
-        width: 80px;
-        margin: 15px 15px 15px 0;
-        font-size: 25px;
-    }
-
-    .informatie-page footer {
-        font-size: 18px;
-    }
-}
