@@ -843,4 +843,203 @@ body.vina-cover {
 
 
 
+/* =========
+Online culture 
+ ==========
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body.poster-page {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* De hoofdposter-container die alles bij elkaar houdt */
+.poster-container {
+    position: relative;
+    width: 420px; /* Vaste breedte voor de poster layout */
+    height: 900px;
+    background-color: #2b3018; /* Groene camouflage basis */
+    background-image: url('../images/street-bg.jpg'); /* Achtergrondafbeelding */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border: 2px solid #000;
+}
+
+/* 1. HEADER / LOGO BOVENIN */
+.logo-box {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 10;
+}
+
+.logo-box h1 {
+    font-size: 32px;
+    color: #ff3300;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.logo-box .tagline {
+    font-size: 11px;
+    color: #2cd080;
+    font-weight: bold;
+    transform: rotate(-3deg);
+    margin: 2px 0;
+}
+
+.logo-box .main-title {
+    font-size: 26px;
+    color: #ff3300;
+    background-color: #000;
+    padding: 2px 6px;
+    display: inline-block;
+}
+
+.logo-box .subtitle {
+    display: block;
+    font-size: 10px;
+    color: #fff;
+    background: #000;
+    padding: 2px 4px;
+    margin-top: 2px;
+}
+
+/* 2. TELEFOON ELEMENTEN (CARDS) */
+
+/* BlackBerry rechtsboven */
+.blackberry {
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    width: 170px;
+    background: #111;
+    border-radius: 15px;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #333;
+    z-index: 5;
+}
+
+/* Roze Telefoon links */
+.pink-phone {
+    position: absolute;
+    top: 240px;
+    left: 15px;
+    width: 150px;
+    background: #ffb6c1;
+    border-radius: 20px;
+    padding: 12px;
+    color: #000;
+    z-index: 4;
+}
+
+/* Witte Telefoon linksonder */
+.white-phone {
+    position: absolute;
+    bottom: 20px;
+    left: 45px;
+    width: 200px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 15px;
+    color: #000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 6;
+}
+
+/* Inhoud van de teksten op de schermen */
+.screen-content h3 {
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.screen-content p {
+    font-size: 8px;
+    line-height: 1.2;
+}
+
+/* 3. GROENE OVAAL BADGE */
+.green-oval {
+    position: absolute;
+    top: 350px;
+    right: 10px;
+    width: 190px;
+    height: 90px;
+    background-color: #2cd080;
+    border: 3px solid #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 7;
+}
+
+.green-oval p {
+    font-size: 14px;
+    font-weight: 900;
+    color: #000;
+    padding: 10px;
+    line-height: 1.1;
+}
+
+/* 4. SPECIALE TEKSTEN & AFBEELDINGEN */
+.vertical-text {
+    position: absolute;
+    left: 10px;
+    bottom: 120px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffcc00;
+    letter-spacing: 1px;
+}
+
+.slanted-text {
+    position: absolute;
+    bottom: 120px;
+    right: 20px;
+    font-size: 32px;
+    font-weight: 900;
+    color: #ff66cc;
+    text-shadow: 2px 2px #000;
+    transform: rotate(-25deg);
+    z-index: 8;
+}
+
+/* Losse illustraties / Karakters */
+.graphic {
+    position: absolute;
+    z-index: 10;
+}
+
+.char-1 {
+    top: 100px;
+    left: 5px;
+    width: 35px;
+}
+
+.char-2 {
+    top: 340px;
+    left: 150px;
+    width: 40px;
+}
+
+.star-top {
+    top: 20px;
+    right: 20px;
+    width: 30px;
+}
