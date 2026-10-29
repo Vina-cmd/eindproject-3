@@ -942,7 +942,7 @@ body.informatie-page {
     margin: 50px auto;
     padding: 40px;
 
-    background-color: #f5f0e8;
+ background-color: #f5a5dc;
     color: #171717;
 
 }
@@ -955,7 +955,7 @@ body.informatie-page {
 .informatie-page .new-text-box h1 {
     margin: 0 0 40px;
 
-    color: #f04b50;
+     color: #ff2a00;
     font-family: Impact, "Arial Black", sans-serif;
     font-size: 75px;
     line-height: 0.95;
@@ -976,7 +976,7 @@ body.informatie-page {
     padding: 10px 15px;
 
     background-color: #171717;
-    color: #f8e747;
+    color: #ff9d42;
 
     font-family: Impact, "Arial Black", sans-serif;
     font-size: 30px;
@@ -1089,7 +1089,7 @@ body.informatie-page {
 
     padding: 25px;
 
-    background-color: #ed80ad;
+    background-color:#26e67b;
     color: #171717;
 
     text-align: center;
